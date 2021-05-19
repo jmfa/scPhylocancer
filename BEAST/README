@@ -1,0 +1,2 @@
+Add XML files for all patient data including an info file with the prior settings for each set.
+Additionally, include information on the number of SNVs used for each dataset (including replicates).
