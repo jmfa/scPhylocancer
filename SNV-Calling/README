@@ -1,1 +1,2 @@
 
+Add SNV calling pipeline including both runs of SCCaller and intermediate steps (e.g., bed file generation).
