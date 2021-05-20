@@ -1,1 +1,25 @@
-add here the scripts for quality control, adapter trimming, mapping, dedup, recal & real.
+This folder contains all scripts to process the FASTQs until they're ready for SNV/CNV calling.
+The pipeline goes as follows:
+```
+1. CutAdapt.sh
+2. BWA.sh
+3. Merge-Dedup.sh
+4. BaseRecal.sh
+5. IndelRealignment.sh
+```
+
+**CutAdapt**
+- Remove adapter sequences from seq and wga libraries
+- Remove low quality reads
+**BWA**
+- Align reads onto reference genome (hs37d5.fa)
+- Sort and index resulting BAM.
+**Merge & Dedup**
+- Merge BAM files from same single-cell
+- Mark duplicated reads
+**BaseRecal**
+- Perform base quality recalibration
+**IndelRealignment**
+- Perform realignment around indels. While this is no longer part of GATK's best practices (as HC now performs indel realignment internally), we're going to be using a different calling algorithm (SCcaller) which doesn't perform this step.
+
+
