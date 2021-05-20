@@ -1,2 +1,9 @@
+This folder contains the scripts needed to run SCcaller for SNV identification.
+Since SCcaller performs SNV calling for each cell individually, we have to run it twice:
 
-Add SNV calling pipeline including both runs of SCCaller and intermediate steps (e.g., bed file generation).
+**SCcaller_Run1.sh**
+- Standard SCcaller run. We're doing the runs in a loop per chromosome instead processing the full genome at once (otherwise it takes too long).
+**SCcaller_Run2.sh**
+- Modified version by @TamaraPrieto which essentially performs calling for the set of sites identified in the previous version (similar to GATK's GenotypeGivenAlleles).
+- This allows users to fetch all REF/REF positions for all cells to avoid having too much missing data after merging the calls from each cell.
+
