@@ -1,13 +1,14 @@
 This folder contains all scripts to process the FASTQs until they're ready for SNV/CNV calling.
 The pipeline goes as follows:
-```
+
+####
 1. CutAdapt.sh
 2. BWA.sh
 3. Merge-Dedup.sh
 4. BaseRecal.sh
 5. IndelRealignment.sh
-```
 
+####
 **CutAdapt**
 - Remove adapter sequences from seq and wga libraries
 - Remove low quality reads
