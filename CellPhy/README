@@ -1,6 +1,6 @@
 This folder containts the scripts for phylogenetic reconstruction using our own method - CellPhy.
 After the final VCF is generated, simply use it with CellPhy.sh.
-The provided script assumes that users wants to use the GL model.
+The provided script assumes that users want to use the GL model.
 
 Further options can be found in the tool's github page:
 https://github.com/amkozlov/cellphy
