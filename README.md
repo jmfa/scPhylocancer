@@ -1,4 +1,4 @@
-# PHYLOCANCER
+# scPhylo
 **Analysis of single-cell whole-genome sequencing data for the Phylocancer (ERC) Project.**
 
 This repository contains all necessary information to perform the full analysis of single-cell sequencing data - from FASTQ to BEAST.
