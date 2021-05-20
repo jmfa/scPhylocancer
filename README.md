@@ -2,7 +2,7 @@
 **Analysis of single-cell whole-genome sequencing data for the Phylocancer (ERC) Project.**
 
 This repository contains all necessary information to perform the full analysis of single-cell sequencing data - from FASTQ to BEAST.
-For reproducibility purposes, a small _toy set_ is provided so that users can check the entire pipeline in a reasonable time frame.
+For reproducibility purposes, a small _toy set_ will be provided so that users can check the entire pipeline in a reasonable time frame.
 
 All scripts adapted for a SLURM cluster.
 
