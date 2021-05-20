@@ -7,3 +7,8 @@ Since SCcaller performs SNV calling for each cell individually, we have to run i
 - Modified version by @TamaraPrieto which essentially performs calling for the set of sites identified in the previous version (similar to GATK's GenotypeGivenAlleles).
 - This allows users to fetch all REF/REF positions for all cells to avoid having too much missing data after merging the calls from each cell.
 
+Afterwards, follow the provided filtering script to apply all our filtering criteria:
+- Remove CN-deletions
+- Apply consensus filter
+- Apply missingness filter
+
