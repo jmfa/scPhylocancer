@@ -1,1 +1,7 @@
-Add scripts for GINKGO CNV calling using local version.
+This folder contains the scripts needed for GINKGO CNV calling (using a local installation).
+Essentially, one just needs to generate bed files from the processed BAM files using BAMtoBED.sh.
+Afterwards, simply run GINKGO using the available analyze.sh script.
+
+Do not forget to change the variables in analyze.sh, namely:
+$dir
+$home
